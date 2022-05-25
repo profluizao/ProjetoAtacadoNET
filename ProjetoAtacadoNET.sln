@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atacado.Modelo", "Atacado.Modelo\Atacado.Modelo.csproj", "{E323DA6B-6823-4C8B-A725-20E32AA02563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atacado.FakeDB", "Atacado.FakeDB\Atacado.FakeDB.csproj", "{7486C57F-B9A4-4DD9-9CAE-6FDE0A60C792}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E323DA6B-6823-4C8B-A725-20E32AA02563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E323DA6B-6823-4C8B-A725-20E32AA02563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E323DA6B-6823-4C8B-A725-20E32AA02563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E323DA6B-6823-4C8B-A725-20E32AA02563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7486C57F-B9A4-4DD9-9CAE-6FDE0A60C792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7486C57F-B9A4-4DD9-9CAE-6FDE0A60C792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7486C57F-B9A4-4DD9-9CAE-6FDE0A60C792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7486C57F-B9A4-4DD9-9CAE-6FDE0A60C792}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD193B41-7D36-43FF-9037-3C05FB3F45D0}
+	EndGlobalSection
+EndGlobal
