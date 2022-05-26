@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Atacado.Modelo.Estoque
 {
-    public class Produto : BaseCampoPadronizado02
+    public class Produto : BaseCampoPadronizado03
     {
         private int codigoCategoria;
 
@@ -25,8 +25,8 @@ namespace Atacado.Modelo.Estoque
             set { this.codigoSubcategoria = value; }
         }
 
-        public Produto(int codigo, string descricao, int codCategoria, int codSubcategoria) 
-            : base(codigo, descricao)
+        public Produto(int codigo, int codSubcategoria, int codCategoria, string descricao, int situacao) 
+            : base(codigo, descricao, situacao)
         {
             this.codigoCategoria = codCategoria;
             this.codigoSubcategoria = codSubcategoria;

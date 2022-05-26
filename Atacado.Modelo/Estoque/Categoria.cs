@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Atacado.Modelo.Estoque
 {
-    public class Categoria : BaseCampoPadronizado02
+    public class Categoria : BaseCampoPadronizado03
     {
         private List<Subcategoria> subcategorias;
 
@@ -17,8 +17,8 @@ namespace Atacado.Modelo.Estoque
             set { this.subcategorias = value; }
         }
 
-        public Categoria(int codigo, string descricao) 
-            : base(codigo, descricao)
+        public Categoria(int codigo, string descricao, int situacao) 
+            : base(codigo, descricao, situacao)
         {
         }
     }
