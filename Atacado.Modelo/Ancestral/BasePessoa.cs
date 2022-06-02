@@ -13,10 +13,18 @@ namespace Atacado.Modelo.Ancestral
         protected string email;
 
         protected string endereco;
+
+        protected SituacaoEnum situacao;
         
         public string Telefone { get => telefone; set => telefone = value; }
         public string Email { get => email; set => email = value; }
         public string Endereco { get => endereco; set => endereco = value; }
+
+        public SituacaoEnum Situacao
+        {
+            get { return this.situacao; }
+            set { this.situacao = value; }
+        }
 
         public BasePessoa(int codigo, string telefone, string email)
             : base(codigo)
