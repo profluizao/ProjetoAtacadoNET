@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Atacado.FakeDB.IBGE
 {
-    public static class EstadoFakeFB
+    public static class EstadoFakeDB
     {
         private static List<Estado> estados = new List<Estado>();
 

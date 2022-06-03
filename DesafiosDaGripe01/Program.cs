@@ -10,7 +10,7 @@ namespace DesafiosDaGripe01
     {
         public static void Main(string[] args)
         {
-            Matematica.Exercicio01(OperacaoEnum.Adicao, 25, 10);
+            //Matematica.Exercicio01(OperacaoEnum.Adicao, 25, 10);
 
 
         }
