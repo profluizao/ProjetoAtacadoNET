@@ -1,0 +1,35 @@
+﻿using Atacado.Domain.Ancestral;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atacado.Domain.Estoque
+{
+    public class Produto : BaseCampoPadronizado03
+    {
+        private int codigoCategoria;
+
+        private int codigoSubcategoria;
+
+        public int CodigoCategoria
+        { 
+            get { return codigoCategoria; }
+            set { codigoCategoria = value; }
+        }
+
+        public int CodigoSubcategoria
+        { 
+            get { return this.codigoSubcategoria; }
+            set { this.codigoSubcategoria = value; }
+        }
+
+        public Produto(int codigo, int codSubcategoria, int codCategoria, string descricao, int situacao) 
+            : base(codigo, descricao, situacao)
+        {
+            this.codigoCategoria = codCategoria;
+            this.codigoSubcategoria = codSubcategoria;
+        }
+    }
+}

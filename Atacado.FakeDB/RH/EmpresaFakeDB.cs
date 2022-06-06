@@ -1,5 +1,5 @@
-﻿using Atacado.Modelo.Ancestral;
-using Atacado.Modelo.RH;
+﻿using Atacado.Domain.Ancestral;
+using Atacado.Domain.RH;
 using System;
 using System.Collections.Generic;
 using System.Linq;

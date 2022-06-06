@@ -1,4 +1,4 @@
-﻿namespace Atacado.Map
+﻿namespace Atacado.Service
 {
     public class Class1
     {

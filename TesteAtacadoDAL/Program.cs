@@ -1,5 +1,5 @@
 ﻿using Atacado.DAL.Estoque;
-using Atacado.Modelo.Estoque;
+using Atacado.Domain.Estoque;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Atacado.Modelo;
+using Atacado.Domain;
 using Atacado.FakeDB;
-using Atacado.Modelo.RH;
+using Atacado.Domain.RH;
 using Atacado.FakeDB.RH;
-using Atacado.Modelo.Ancestral;
+using Atacado.Domain.Ancestral;
 
 namespace DesafiosDaGripe01
 {
