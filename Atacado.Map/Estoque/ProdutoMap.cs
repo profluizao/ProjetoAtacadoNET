@@ -10,19 +10,19 @@ namespace Atacado.Map.Estoque
 {
     public static class ProdutoMap
     {
-        public static ProdutoPOCO ConverterParaPoco(Produto modelo)
+        public static ProdutoPOCO ConverterParaPoco(Produto domain)
         {
             return new ProdutoPOCO()
             {
-                Codigo = modelo.Codigo,
-                CodigoSubcategoria = modelo.CodigoSubcategoria,
-                CodigoCategoria = modelo.CodigoCategoria,
-                Descricao = modelo.Descricao,
-                Situacao = modelo.Situacao
+                Codigo = domain.Codigo,
+                CodigoSubcategoria = domain.CodigoSubcategoria,
+                CodigoCategoria = domain.CodigoCategoria,
+                Descricao = domain.Descricao,
+                Situacao = domain.Situacao
             };
         }
 
-        public static Produto ConverterParaModelo(ProdutoPOCO poco)
+        public static Produto ConverterParaDomain(ProdutoPOCO poco)
         {
             return new Produto(poco.Codigo, poco.CodigoSubcategoria, poco.CodigoCategoria, poco.Descricao, poco.Situacao);
         }

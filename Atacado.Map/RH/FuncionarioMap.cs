@@ -10,29 +10,29 @@ namespace Atacado.Map.RH
 {
     public static class FuncionarioMap
     {
-        public static FuncionarioPOCO ConverterParaPoco(Funcionario modelo)
+        public static FuncionarioPOCO ConverterParaPoco(Funcionario domain)
         {
             return new FuncionarioPOCO()
             {
-                Codigo = modelo.Codigo,
-                Telefone = modelo.Telefone,
-                Email = modelo.Email,
-                Endereco = modelo.Endereco,
-                Nome = modelo.Nome,
-                SobreNome = modelo.SobreNome,
-                Idade = modelo.Idade,
-                Altura = modelo.Altura,
-                Peso = modelo.Peso,
-                DtNascimento = modelo.DtNascimento,
-                Naturalidade = modelo.Naturalidade,
-                Nacionalidade = modelo.Nacionalidade,
-                Sexo = modelo.Sexo,
-                Cpf = modelo.Cpf,
-                Rg = modelo.Rg
+                Codigo = domain.Codigo,
+                Telefone = domain.Telefone,
+                Email = domain.Email,
+                Endereco = domain.Endereco,
+                Nome = domain.Nome,
+                SobreNome = domain.SobreNome,
+                Idade = domain.Idade,
+                Altura = domain.Altura,
+                Peso = domain.Peso,
+                DtNascimento = domain.DtNascimento,
+                Naturalidade = domain.Naturalidade,
+                Nacionalidade = domain.Nacionalidade,
+                Sexo = domain.Sexo,
+                Cpf = domain.Cpf,
+                Rg = domain.Rg
             };
         }
 
-        public static Funcionario ConverterParaModelo(FuncionarioPOCO poco)
+        public static Funcionario ConverterParaDomain(FuncionarioPOCO poco)
         {
             return new Funcionario(poco.Codigo, poco.Telefone, poco.Email, poco.Endereco, poco.Nome
                 , poco.SobreNome, poco.Idade, poco.Altura, poco.Peso, poco.DtNascimento, poco.Naturalidade
