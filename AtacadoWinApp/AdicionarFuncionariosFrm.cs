@@ -17,6 +17,9 @@ namespace AtacadoWinApp
         public AdicionarFuncionariosFrm()
         {
             InitializeComponent();
+            //TesteBtn.Enabled = false;
+            //TesteBtn.Visible = false;
+            this.PreencherSexoCmb();
         }
 
         private void FecharBtn_Click(object sender, EventArgs e)
@@ -28,7 +31,9 @@ namespace AtacadoWinApp
         {
             FuncionarioPOCO poco = new FuncionarioPOCO()
             {
-                Cpf = CpfTxt.Text
+                Cpf = CpfTxt.Text,
+                DtNascimento = DtNascimentoDtp.Value,
+                Sexo = SexoCmb.SelectedValue.ToString()
             };
 
             FuncionarioService srv = new FuncionarioService();
@@ -43,6 +48,33 @@ namespace AtacadoWinApp
                 MessageBox.Show(mensagem, "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             return;
+        }
+
+        private void TesteBtn_Click(object sender, EventArgs e)
+        {
+            if (SexoCmb.SelectedIndex == -1)
+                MessageBox.Show("ERRO");
+            else
+            {
+                string texto = SexoCmb.SelectedValue.ToString();
+                MessageBox.Show(texto);
+            }            
+        }
+
+        private void PreencherSexoCmb()
+        {
+            SexoCmb.Items.Clear();
+
+            SexoCmb.DisplayMember = "Value";
+            SexoCmb.ValueMember = "Key";
+
+            Dictionary<string, string> items = new Dictionary<string, string>();
+            items.Add("M", "Masculino");
+            items.Add("F", "Feminino");
+
+            SexoCmb.DataSource = new BindingSource(items, null);
+
+            SexoCmb.SelectedIndex = 0;
         }
     }
 }

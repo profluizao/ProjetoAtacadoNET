@@ -51,7 +51,7 @@
             this.IdadeTxt = new System.Windows.Forms.TextBox();
             this.AlturaTxt = new System.Windows.Forms.TextBox();
             this.PesoTxt = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DtNascimentoDtp = new System.Windows.Forms.DateTimePicker();
             this.PesoLbl = new System.Windows.Forms.Label();
             this.NacionalidadeTxt = new System.Windows.Forms.TextBox();
             this.NaturalidadeTxt = new System.Windows.Forms.TextBox();
@@ -60,6 +60,7 @@
             this.CpfTxt = new System.Windows.Forms.TextBox();
             this.FecharBtn = new System.Windows.Forms.Button();
             this.SalvarBtn = new System.Windows.Forms.Button();
+            this.TesteBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CodigoLbl
@@ -252,12 +253,12 @@
             this.PesoTxt.Size = new System.Drawing.Size(100, 23);
             this.PesoTxt.TabIndex = 23;
             // 
-            // dateTimePicker1
+            // DtNascimentoDtp
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(138, 184);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 24;
+            this.DtNascimentoDtp.Location = new System.Drawing.Point(138, 184);
+            this.DtNascimentoDtp.Name = "DtNascimentoDtp";
+            this.DtNascimentoDtp.Size = new System.Drawing.Size(200, 23);
+            this.DtNascimentoDtp.TabIndex = 24;
             // 
             // PesoLbl
             // 
@@ -327,11 +328,22 @@
             this.SalvarBtn.UseVisualStyleBackColor = true;
             this.SalvarBtn.Click += new System.EventHandler(this.SalvarBtn_Click);
             // 
+            // TesteBtn
+            // 
+            this.TesteBtn.Location = new System.Drawing.Point(713, 12);
+            this.TesteBtn.Name = "TesteBtn";
+            this.TesteBtn.Size = new System.Drawing.Size(75, 23);
+            this.TesteBtn.TabIndex = 33;
+            this.TesteBtn.Text = "Testar";
+            this.TesteBtn.UseVisualStyleBackColor = true;
+            this.TesteBtn.Click += new System.EventHandler(this.TesteBtn_Click);
+            // 
             // AdicionarFuncionariosFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TesteBtn);
             this.Controls.Add(this.SalvarBtn);
             this.Controls.Add(this.FecharBtn);
             this.Controls.Add(this.CpfTxt);
@@ -340,7 +352,7 @@
             this.Controls.Add(this.NaturalidadeTxt);
             this.Controls.Add(this.NacionalidadeTxt);
             this.Controls.Add(this.PesoLbl);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.DtNascimentoDtp);
             this.Controls.Add(this.PesoTxt);
             this.Controls.Add(this.AlturaTxt);
             this.Controls.Add(this.IdadeTxt);
@@ -396,7 +408,7 @@
         private TextBox IdadeTxt;
         private TextBox AlturaTxt;
         private TextBox PesoTxt;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker DtNascimentoDtp;
         private Label PesoLbl;
         private TextBox NacionalidadeTxt;
         private TextBox NaturalidadeTxt;
@@ -405,5 +417,6 @@
         private TextBox CpfTxt;
         private Button FecharBtn;
         private Button SalvarBtn;
+        private Button TesteBtn;
     }
 }
